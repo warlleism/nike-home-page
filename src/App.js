@@ -1,23 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import './global/App.css';
+import Content from './view/content';
+import Page from './view/page';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Page />
+      <Content
+        img1={require('./img/tenis/img8.png')}
+        img2={require('./img/tenis/img9.png')}
+        img3={require('./img/tenis/img10.png')}
+        img4={require('./img/tenis/img3.png')}
+        titulo={"Yellow Nike Shoes"}
+        desc={`There are many variations of passages of 
+        Lorem Ipsum available, but the majority have
+        suffered alteration in some form, by
+        injected humour, or randomised words
+        which don't look even slightly
+        believable. If you are going
+        to use a passage of Lorem Ipsum,
+        you need to be sure there isn't
+        anything embarrassing hidden in
+        the middle of text. All the Lorem
+        Ipsum generators on the Internet
+        tend to repeat predefined chunks
+        as necessary, making this the 
+        first true generator on the Internet.`}
+      />
+      <Content
+        scale={true}
+        img1={require('./img/tenis/img5.png')}
+        img2={require('./img/tenis/img7.png')}
+        img3={require('./img/tenis/img6.png')}
+        img4={require('./img/tenis/img5.png')}
+        titulo={"Red Nike Shoes"}
+        desc={`It is a long established fact that a reader will be 
+        distracted by the readable content of a page when looking 
+        at its layout. The point of using Lorem Ipsum is that it 
+        has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making 
+        it look like readable English. Many desktop publishing 
+        packages and web page editors now use Lorem Ipsum as
+        their default model text, and a search for 'lorem 
+        ipsum' will uncover many web sites still in their infancy.`}
+      />
+      <Content
+        img1={require('./img/tenis/img4.png')}
+        img2={require('./img/tenis/img1.png')}
+        img3={require('./img/tenis/img2.png')}
+        img4={require('./img/tenis/img3.png')}
+        titulo={"Orange Nike Shoes"}
+        desc={`Lorem Ipsum is simply dummy text of the printing and 
+        typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambled it to make a 
+        type specimen book. It has survived not only five centuries,
+         but also the leap into electronic typesetting, remaining 
+         essentially unchanged. It was popularised in the 1960s with 
+         the release of Letraset sheets containing Lorem Ipsum passages, 
+         and more recently with desktop publishing software like Aldus 
+         PageMaker including versions of Lorem Ipsum.` }
+      />
     </div>
   );
 }

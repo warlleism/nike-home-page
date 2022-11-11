@@ -1,0 +1,102 @@
+.content-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    transform: scale(-1, 1);
+
+    .content-info {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        .content-titulo {
+            width: 50%;
+            margin: 0 auto;
+            font-size: 6rem;
+            font-weight: 900;
+            color: rgb(36, 36, 36);
+        }
+
+        .content-desc {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            color: rgb(36, 36, 36);
+        }
+
+        .content-botao {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 30px;
+            transform: scaleX(-1);
+
+            div {
+                width: 120px;
+                color: #ffff;
+                cursor: pointer;
+                font-weight: 500;
+                padding: 10px 0px;
+                text-align: center;
+                border-radius: 20px;
+                background-color: #1E1E1E;
+                transition: .5s ease-in-out;
+                border: solid 2px #ffffff;
+            }
+
+            div:hover {
+                border: solid 2px #1E1E1E;
+            }
+
+        }
+    }
+
+    .content-product {
+        width: 30%;
+        position: relative;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: linear-gradient(to top, rgb(109, 109, 109) -100%, rgb(7, 7, 7));
+
+        .tenis {
+            left: -300px;
+            top: 10%;
+            width: 700px;
+            height: 500px;
+            position: absolute;
+            transition: .5s ease-in-out;
+        }
+
+      
+        .content-tenis {
+            left: -55%;
+            display: flex;
+            bottom: 100px;
+            position: absolute;
+
+            img {
+                margin: 20px;
+                height: 160px;
+                width: 220px;
+                cursor: pointer;
+                border-radius: 12px;
+                transition: .5s ease-in-out;
+                border: solid 2px #ffffff;
+                background-color: rgb(194, 189, 189);
+
+            }
+
+            img:hover {
+                border: solid 2px #1E1E1E;
+            }
+        }
+    }
+}
