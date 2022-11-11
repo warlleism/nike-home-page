@@ -21,6 +21,8 @@ const Content = ({ ...props }) => {
 
             <div className="content-product">
                 <img className="tenis" src={imagem} alt="" />
+                <img className="background-logo" src={require('../../img/logo-white.png')} alt="" style={{ transform: props.scale ? "scaleX(-1)" : "scaleX(1)" }} />
+                <div className="nike" style={{ transform: props.scale ? "scaleX(-1)" : "scaleX(1)" }}>NIKE</div>
                 <div className="content-tenis">
                     <img src={props.img2} onMouseEnter={() => setImagem(props.img2)} alt="" />
                     <img src={props.img3} onMouseEnter={() => setImagem(props.img3)} alt="" />
